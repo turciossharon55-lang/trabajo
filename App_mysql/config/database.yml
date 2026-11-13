@@ -1,0 +1,15 @@
+development:
+  adapter: mysql2
+  username: rails
+  password: ruby1234
+  host: 127.0.0.1
+  port: 3306
+  database: RoR
+  pool: 5
+  timeout: 5000
+
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000

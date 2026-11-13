@@ -1,0 +1,124 @@
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+  [1m[35m (26.4ms)[0m  [1m[35mCREATE DATABASE `RoR` DEFAULT CHARACTER SET `utf8mb4` /*application='AppMysql'*/[0m
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+  [1m[35m (113.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE /*application='AppMysql'*/[0m
+  [1m[35m (111.6ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `password` varchar(255), `email` varchar(255), `programador` boolean, `birthday` date, `work_time` time, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL) /*application='AppMysql'*/[0m
+  [1m[35m (38.8ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) /*application='AppMysql'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='AppMysql'*/[0m
+  [1m[35m (5.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20261113195254) /*application='AppMysql'*/[0m
+  [1m[35m (38.5ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL) /*application='AppMysql'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.0ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1 /*application='AppMysql'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (4.1ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2026-11-13 19:59:24.825373', '2026-11-13 19:59:24.825378') RETURNING `key` /*application='AppMysql'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (12.4ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1 /*application='AppMysql'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1 /*application='AppMysql'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (6.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('schema_sha1', 'ff1dd38ef9da863ca389154156ee2fb716e8254c', '2026-11-13 19:59:24.852892', '2026-11-13 19:59:24.852898') RETURNING `key` /*application='AppMysql'*/[0m
+  [1m[35m (7.4ms)[0m  [1m[34mSELECT GET_LOCK('8525829743479686540', 0) /*application='AppMysql'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='AppMysql'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1 /*application='AppMysql'*/[0m
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('8525829743479686540') /*application='AppMysql'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='AppMysql'*/[0m
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Started GET "/" for 127.0.0.1 at 2026-11-13 14:03:25 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (11.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='AppMysql'*/[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (12.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` /*action='index',application='AppMysql',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:9
+  Rendered users/index.html.erb within layouts/application (Duration: 23.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 54.0ms | GC: 0.0ms)
+Completed 200 OK in 106ms (Views: 46.6ms | ActiveRecord: 13.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2026-11-13 14:03:30 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 29.8ms | GC: 0.0ms)
+  Rendered users/new.html.erb within layouts/application (Duration: 31.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | GC: 0.0ms)
+Completed 200 OK in 90ms (Views: 41.1ms | ActiveRecord: 26.5ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2026-11-13 14:04:13 -0600
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"acsa", "password"=>"[FILTERED]", "email"=>"[FILTERED]", "programador"=>"1", "birthday"=>"2006-04-05", "work_time"=>""}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN /*action='create',application='AppMysql',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Exists? (7.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'acsa@gmail.com' LIMIT 1 /*action='create',application='AppMysql',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[31mROLLBACK /*action='create',application='AppMysql',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.2ms | GC: 0.0ms)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 30ms (Views: 8.1ms | ActiveRecord: 10.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2026-11-13 14:04:24 -0600
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"acsa", "password"=>"[FILTERED]", "email"=>"[FILTERED]", "programador"=>"1", "birthday"=>"2006-04-05", "work_time"=>""}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*action='create',application='AppMysql',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Exists? (4.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'acsa@gmail.com' LIMIT 1 /*action='create',application='AppMysql',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Create (8.7ms)[0m  [1m[32mINSERT INTO `users` (`name`, `password`, `email`, `programador`, `birthday`, `work_time`, `created_at`, `updated_at`) VALUES ('acsa', '12345678', 'acsa@gmail.com', TRUE, '2006-04-05', NULL, '2026-11-13 20:04:24.088200', '2026-11-13 20:04:24.088200') RETURNING `id` /*action='create',application='AppMysql',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[35mCOMMIT /*action='create',application='AppMysql',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/users/1
+↳ app/controllers/users_controller.rb:28:in `block (2 levels) in create'
+Completed 302 Found in 50ms (ActiveRecord: 18.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2026-11-13 14:04:24 -0600
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 /*action='show',application='AppMysql',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered users/show.html.erb within layouts/application (Duration: 17.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | GC: 0.0ms)
+Completed 200 OK in 29ms (Views: 20.2ms | ActiveRecord: 2.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2026-11-13 14:04:26 -0600
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 /*action='edit',application='AppMysql',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 9.7ms | GC: 0.0ms)
+  Rendered users/edit.html.erb within layouts/application (Duration: 12.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | GC: 0.0ms)
+Completed 200 OK in 30ms (Views: 18.1ms | ActiveRecord: 3.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2026-11-13 14:04:26 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` /*action='index',application='AppMysql',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:9
+  Rendered users/_user.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered users/index.html.erb within layouts/application (Duration: 4.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
